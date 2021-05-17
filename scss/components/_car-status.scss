@@ -48,3 +48,71 @@
     margin-right: .375rem;
   }
 }
+
+.doors-status {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  &__car {
+    position: absolute;
+    top: 65px;
+    z-index: 1;
+  }
+
+  button {
+    position: absolute;
+    z-index: 1;
+  }
+
+  #openFrontTrunk {
+    top: 1rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 15px;
+      background-color: $gray;
+      top: 35px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  #openRearTrunk {
+    top: 250px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 10px;
+      background-color: $gray;
+      top: -11px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  #openChargingPlug {
+    top: 196px;
+    left: 42px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      background-color: $gray;
+      top: 50%;
+      left: 63px;
+      transform: translateY(-50%);
+    }
+
+    img {
+      position: relative;
+      top: 2px;
+    }
+  }
+}
