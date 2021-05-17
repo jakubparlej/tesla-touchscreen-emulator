@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Tesla UI Emulator</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="left-column">
+            <div class="car-status">
+                <div class="car-controls">
+                    <div class="car-controls__top-bar"></div>
+                    <div class="car-controls__drive-mode">P</div>
+                    <div class="car-controls__bottom-bar">
+                        <div class="drive-modes">
+                            <span class="drive-modes__mode drive-modes__mode--active">P</span>
+                            <span class="drive-modes__mode">R</span>
+                            <span class="drive-modes__mode">N</span>
+                            <span class="drive-modes__mode">D</span>
+                        </div>
+                        <div class="battery-status">
+                            <span class="battery-status__distance">202 km</span>
+                            <img src="./assets/icons/battery-icon.svg" alt="" class="battery-status__icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="doors-status">
+                    <button class="btn btn-secondary">OPEN</button>
+                    <button class="btn btn-secondary">OPEN</button>
+                    <button class="btn btn-secondary">
+                        <img src="./assets/icons/bolt-icon.svg" alt="">
+                    </button>
+
+                </div>
+            </div>
+        </div>
+        <div class="right-column">
+            <h1>right column</h1>
+        </div>
+        <div class="bottom-bar">
+            <h1>bottom bar</h1>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
