@@ -1,0 +1,47 @@
+.cards {
+  height: 115px;
+
+
+}
+
+.card {
+  padding: 1rem 60px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 113px 1fr;
+  grid-template-rows: 20px 80px 8px;
+  grid-template-areas:
+    "camera bolt mic"
+    ". wipers ."
+    "indicators indicators indicators"
+  ;
+}
+
+.wipers-btn {
+  grid-area: wipers;
+  justify-self: stretch;
+
+  img {
+    position: relative;
+    top: 3px;
+  }
+}
+
+.indicators {
+  display: flex;
+  width: 2rem;
+  justify-content: space-between;
+  grid-area: indicators;
+}
+
+.indicator {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: $lightGray;
+
+  &--active {
+    background-color: $darkGray;
+  }
+}
