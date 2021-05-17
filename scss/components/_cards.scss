@@ -1,25 +1,30 @@
 .cards {
-  height: 115px;
+  height: 120px;
 
-
+  img {
+    cursor: pointer;
+  }
 }
 
 .card {
   padding: 1rem 60px;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  grid-template-columns: 1fr 113px 1fr;
-  grid-template-rows: 20px 80px 8px;
-  grid-template-areas:
-    "camera bolt mic"
-    ". wipers ."
-    "indicators indicators indicators"
-  ;
+
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+  }
+
+  &__wipers {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .wipers-btn {
+  width: 113px;
   grid-area: wipers;
+  align-self: end;
   justify-self: stretch;
 
   img {
@@ -30,6 +35,7 @@
 
 .indicators {
   display: flex;
+  margin: 15px auto;
   width: 2rem;
   justify-content: space-between;
   grid-area: indicators;
