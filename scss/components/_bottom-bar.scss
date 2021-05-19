@@ -5,4 +5,61 @@
     width: 1000px;
     height: 61px;
     background-color: #000;
+    display: flex;
+    align-items: center;
+
+    &__left-column {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 209px;
+        padding: 0 55px;
+    }
+
+    &__right-column {
+        display: flex;
+        align-items: center;
+        width: 681px;
+    }
+}
+
+.temperature {
+    display: flex;
+    cursor: pointer;
+
+    &__number {
+        font-size: 24px;
+        color: white;
+        margin: 0 14px;
+    }
+}
+
+.volume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__icon {
+        margin: 5px 0;
+    }
+}
+
+#seat-left {
+    margin-left: 10px;
+    margin-right: 53px;
+}
+
+#left-temperature {
+    margin-right: 28px;
+}
+
+#right-temperature {
+    margin-left: 28px;
+    margin-right: 53px;
+}
+
+#seat-right,
+#defrost-front-window,
+#defrost-rear-window {
+    margin-right: 68px;
 }

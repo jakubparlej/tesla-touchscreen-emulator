@@ -4,4 +4,36 @@
     top: 0;
     width: 681px;
     height: 564px;
+    background: url(../../assets/images/map.png);
+    background-position: center 50%;
+    background-size: contain;
+}
+
+.navigate-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 207px;
+    height: 42px;
+    margin-left: 9px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    padding: 0 15px;
+    cursor: pointer;
+
+    &__navigate-icon {
+        margin-right: 11px;
+        margin-bottom: 4px;
+    }
+
+    p {
+        font-size: 12px;
+        font-weight: 600;
+        color: $gray;
+    }
+
+    &__arrow-right-icon {
+        position: absolute;
+        right: 15px;
+    }
 }
