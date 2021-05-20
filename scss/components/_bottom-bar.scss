@@ -7,6 +7,7 @@
     background-color: #000;
     display: flex;
     align-items: center;
+    z-index: 2;
 
     &__left-column {
         display: flex;
@@ -14,6 +15,10 @@
         align-items: center;
         width: 209px;
         padding: 0 55px;
+
+        img {
+            cursor: pointer;
+        }
     }
 
     &__right-column {

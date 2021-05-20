@@ -1,3 +1,9 @@
+import {
+  BottomBar
+} from './bottom-bar.js';
+
+BottomBar();
+
 const openFrontTrunk = document.querySelector('#openFrontTrunk');
 const openRearTrunk = document.querySelector('#openRearTrunk');
 const openChargingPlug = document.querySelector('#openChargingPlug');

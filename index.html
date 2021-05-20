@@ -87,10 +87,53 @@
                 <p>Navigate</p>
                 <img class="navigate-btn__arrow-right-icon" src="./assets/icons/nav-arrow-right.svg" alt="">
             </div>
+
+            <div class="controls controls--active" id="controls">
+                <button class="close-btn">
+                    <img src="./assets/icons/close-icon.svg" alt="">
+                </button>
+
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item menu__item--active">
+                            <img class="menu__item-icon" src="./assets/icons/toggle-icon.svg" alt="">
+                            <p class="menu__item-name">Quick Controls</p>
+                        </li>
+                        <li class="menu__item">
+                            <img class="menu__item-icon" src="./assets/icons/light-icon-gray.svg" alt="">
+                            <p class="menu__item-name">Lights</p>
+                        </li>
+                        <li class="menu__item">
+                            <img class="menu__item-icon" src="./assets/icons/lock-icon-gray.svg" alt="">
+                            <p class="menu__item-name">Locks</p>
+                        </li>
+                        <li class="menu__item">
+                            <img class="menu__item-icon" src="./assets/icons/car-icon-gray.svg" alt="">
+                            <p class="menu__item-name">Driving</p>
+                        </li>
+                        <li class="menu__item">
+                            <img class="menu__item-icon" src="./assets/icons/steering-icon-gray.svg" alt="">
+                            <p class="menu__item-name">Autopilot</p>
+                        </li>
+                        <li class="menu__item">
+                            <img class="menu__item-icon" src="./assets/icons/navigate-icon-gray.svg" alt="">
+                            <p class="menu__item-name">Navigation</p>
+                        </li>
+                        <li class="menu__item">
+                            <img class="menu__item-icon" src="./assets/icons/warning-icon-gray.svg" alt="">
+                            <p class="menu__item-name">Safety & Security</p>
+                        </li>
+                        <li class="menu__item">
+                            <img class="menu__item-icon" src="./assets/icons/download-icon-gray.svg" alt="">
+                            <p class="menu__item-name">Software</p>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
         <div class="bottom-bar">
             <div class="bottom-bar__left-column">
-                <img id="controls" src="./assets/icons/car-icon.svg" alt="">
+                <img id="controlsBtn" src="./assets/icons/car-icon.svg" alt="">
                 <img src="./assets/icons/music-icon.svg" alt="">
                 <img src="./assets/icons/up-btn.svg " alt="">
             </div>
@@ -121,7 +164,7 @@
         </div>
     </div>
 
-    <script src="./js/main.js"></script>
+    <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>
